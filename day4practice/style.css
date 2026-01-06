@@ -1,0 +1,217 @@
+/* --------------------
+   RESET & BASE
+--------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --------------------
+   HEADER
+--------------------- */
+header {
+    background: #1f2937;
+    padding: 15px 0;
+}
+
+.head-wrap {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.button button {
+    background: #38bdf8;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --------------------
+   BANNER (FIXED SIZE)
+--------------------- */
+#banner {
+    display: flex;
+    justify-content: center;
+    background: #f1f5f9;
+    padding: 30px 0;
+}
+
+#banner img {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* --------------------
+   ABOUT
+--------------------- */
+#about {
+    padding: 60px 20px;
+}
+
+.about-wrap {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 180px;
+}
+
+.about-desc h2 {
+    margin-bottom: 10px;
+}
+
+/* --------------------
+   SERVICES
+--------------------- */
+#services {
+    padding: 60px 20px;
+    background: #f9fafb;
+}
+
+.service-wrap {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+}
+
+.service {
+    flex: 1;
+    padding: 25px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* -------- CONTACT FORM -------- */
+#contact {
+    padding: 60px 20px;
+}
+
+.contact-wrap {
+    max-width: 600px;
+    margin: auto;
+    background: #f9fafb;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Two column layout */
+.name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.name label {
+    font-weight: 600;
+}
+
+/* Inputs & select – SAME SIZE */
+.name input,
+.name select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Submit button center */
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.submit button {
+    padding: 12px 40px;
+    border: none;
+    background: #38bdf8;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit button:hover {
+    background: #0ea5e9;
+}
+
+/* --------------------
+   HOME LINK
+--------------------- */
+#home {
+    text-align: center;
+    padding: 20px;
+}
+
+/* --------------------
+   FOOTER
+--------------------- */
+footer {
+    background: #1f2937;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-wrap {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sites img {
+    width: 24px;
+    margin-left: 10px;
+}
