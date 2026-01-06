@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Styled Webpage</title>
+
+    <style>
+        /* ----- GLOBAL STYLING ----- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #bcdab4;
+        }
+
+        h1, h2, h3, p {
+            margin: 0 0 15px;
+        }
+
+        /* ----- NAVBAR ----- */
+        nav {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav ul li:hover {
+            color: #00d5ff;
+        }
+
+        /* ----- HERO SECTION ----- */
+        .hero {
+            background: linear-gradient(to right, #007bff, #00d4ff);
+            padding: 80px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* ----- CONTENT SECTION ----- */
+        .container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        /* ----- TABLE STYLING ----- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+        }
+
+        table td {
+            padding: 12px;
+            background-color: #eef3ff;
+        }
+
+        table tr:nth-child(even) td {
+            background-color: #dfe7ff;
+        }
+
+        /* ----- FOOTER ----- */
+        footer {
+            background: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">MyWebsite</div>
+        <ul><hr>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li onclick="show('9819961413')">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>This is a beginner-friendly fully styled webpage with HTML + CSS.</p>
+        <button onclick="alert('Button Clicked!')">Get Started</button>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <div class="card">
+            <h2>About Me</h2>
+            <p>My name is Rupesh, and I’m learning HTML, CSS, and web development.</p>
+        </div>
+
+        <div class="card">
+            <h2>Attendance Table Example</h2>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Rupesh</td>
+                    <td>20</td>
+                    <td>Nepal</td>
+                </tr>
+                <tr>
+                    <td>Anju</td>
+                    <td>19</td>
+                    <td>Nepal</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 MyWebsite – All Rights Reserved
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding innerHTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6ff;
+      padding: 30px;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 18px;
+      margin: 5px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>JavaScript innerHTML Demo</h1>
+
+<div class="box" id="output">
+  <p>This text will change</p>
+</div>
+
+<button onclick="showText()">Show Text</button>
+<button onclick="showHTML()">Show HTML</button>
+<button onclick="addMore()">Add More Content</button>
+<button onclick="resetBox()">Reset</button>
+
+<script>
+  // Show plain text
+  function showText() {
+    document.getElementById("output").innerHTML =
+      "Hello Rupesh! This text was added using innerHTML.";
+  }
+
+  // Show HTML elements
+  function showHTML() {
+    document.getElementById("output").innerHTML =
+      "<h2>Welcome Rupesh</h2>" +
+      "<p>This paragraph and heading are created using <b>innerHTML</b>.</p>" +
+      "<ul>" +
+        "<li>innerHTML can insert HTML</li>" +
+        "<li>It replaces old content</li>" +
+        "<li>It runs on button click</li>" +
+      "</ul>";
+  }
+
+  // Add content (overwrite example explained)
+  function addMore() {
+    document.getElementById("output").innerHTML +=
+      "<p style='color:green;'>This line was added later.</p>";
+  }
+
+  // Reset content
+  function resetBox() {
+    document.getElementById("output").innerHTML =
+      "<p>This text will change</p>";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="formFavicon.png" type="image/png">
+    <title>Forms</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <form action="">
+        <h1>Application Form</h1>
+        <div class="form-inline">
+            <div class="form-field">
+                <label>First Name:</label>
+                <input type="text"  placeholder="Rupes" name="fname">
+            </div>
+            <div class="form-field">
+                <label>Last Name:</label>
+                <input type="text" placeholder="Yadav" name="lname">
+            </div>
+        </div>
+        <div class="form-inline">
+            <div class="form-field">
+                <label>Date of Birth:</label>
+                <input type="datetime-local" name="dob">
+            </div>
+
+            <div class="form-field">
+                <label>Age:</label>
+                <input type="number" name="age">
+            </div>
+        </div>
+        
+        <div class="form-inline">
+            <div class="form-field">
+                <label>Gender:</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label >Email:</label><br>
+                <input type="email"  placeholder="abc@gmail.com" name="email">
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Postion Available:  </label>
+
+            <input type="radio" name="position">
+            <label>Junior Developer</label>
+
+            <input type="radio" name="position">
+            <label for="">Senior Developer</label>
+
+            <input type="radio" name="position">
+            <label>Mid-level Developer</label>
+        </div>
+
+        <div class="form-field">
+            <label for="">Programming Languages:</label>
+            <input type="checkbox" name="plang" value="java" >
+            <label>Java</label>
+            <input type="checkbox" name="plang" value="javascript">
+            <label>JavaScript</label>
+            <input type="checkbox" name="plang" value="python">
+            <label>Python</label>
+        </div>
+        
+        <div class="form-inline">
+            <div class="form-field">
+            <label>Password:</label>
+            <input type="password" name="password">
+            </div>
+
+            <div class="form-field">
+            <label>Confirm Password:</label>
+            <input type="password" name="cpassword">
+            </div>
+        </div>
+        
+        <div class="form-inline">
+            <div class="form-field">
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="formfield">
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
