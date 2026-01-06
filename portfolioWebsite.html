@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupesh Portfolio</title>
+
+    <style>
+        /* ------------------------------
+           GLOBAL
+        ------------------------------- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6ff;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* ------------------------------
+           NAVBAR
+        ------------------------------- */
+        nav {
+            background: #1c1c1c;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav ul li:hover {
+            color: #00d5ff;
+        }
+
+        /* ------------------------------
+           HERO
+        ------------------------------- */
+        .hero {
+            background: linear-gradient(to right, #007bff, #00d4ff);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            background: black;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: white;
+            color: black;
+        }
+
+        /* ------------------------------
+           ABOUT SECTION
+        ------------------------------- */
+        .about-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .about-card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007bff;
+        }
+
+        /* ------------------------------
+           SKILLS
+        ------------------------------- */
+        .skills-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            font-size: 18px;
+        }
+
+        /* ------------------------------
+           PROJECT CARDS
+        ------------------------------- */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* ------------------------------
+           CONTACT FORM
+        ------------------------------- */
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 12px 25px;
+            background: #007bff;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #005fcc;
+        }
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------- */
+        footer {
+            text-align: center;
+            background: #1c1c1c;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Rupesh</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Hello, I'm Rupesh 👋</h1>
+        <p>Web Developer | AI Student | Learner</p>
+        <button onclick="alert('Thanks for visiting my portfolio!')">Hire Me</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section>
+        <div class="about-card">
+            <img src = " ">
+            <h2>About Me</h2>
+            <p>I am Rupesh Yadav, a Computer Science with AI student from Nepal.
+                I love building websites, learning programming, and improving day by day.</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2 style="text-align:center; margin-bottom:20px;">Skills</h2>
+        <div class="skills-box">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">AI Basics</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <h2 style="text-align:center; margin-bottom:20px;">My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <a href = "Attendance.html"><img  src="https://i.ibb.co/hBxJqJv/project1.jpg" alt=""></a>
+                <h3>Attendance System</h3>
+                
+                <p>A simple attendance system using HTML tables.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://i.ibb.co/2WvTMRg/project2.jpg" alt="">
+                <h3>Weather App</h3>
+                <p>A small weather app UI created using HTML + CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://i.ibb.co/xGXJmBH/project3.jpg" alt="">
+                <h3>Calculator</h3>
+                <p>A basic calculator layout using HTML, CSS, and JS.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section>
+        <h2 style="text-align:center;">Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Rupesh Portfolio | All Rights Reserved
+    </footer>
+
+</body>
+</html>

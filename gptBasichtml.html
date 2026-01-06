@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="np">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html basic</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        table {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello</h1>
+    <hr>
+    <p>This is a photo.</p>
+
+    <img src="https://th.bing.com/th/id/OIF.bXW369U7AwWxPMhyOgpMWQ" 
+         alt="Rupesh Image" width="200" height="200">
+
+    <br><br>
+
+    <!-- Correct Form -->
+    <form action="" style="background-color: lightblue; padding: 10px;">
+
+        <label><b>Username:</b></label>
+        <input type="text" placeholder="Enter username"><br><br>
+
+        <label><b>Password:</b></label>
+        <input type="password" placeholder="Enter your password"><br><br>
+
+        <label>Choose a car:</label>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <br><br>
+
+        <!-- This button submits the form by default -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th style="background-color: magenta;">Name</th>
+            <th style="background-color: navy; color: white;">Age</th>
+            <th>Country</th>
+        </tr>
+
+        <tr>
+            <td style="background-color: red;">Rupesh</td>
+            <td style="background-color: pink;">20</td>
+            <td style="background-color: yellow;">Nepal</td>
+        </tr>
+
+        <tr>
+            <td style="background-color: red;">Anju</td>
+            <td style="background-color: pink;">19</td>
+            <td style="background-color: yellow;">Nepal</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Normal button -->
+    <button onclick="alert('hello world!!!')">Click me</button>
+
+</body>
+
+</html>

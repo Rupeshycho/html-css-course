@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+</head>
+<style>
+    body{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 20px;
+        padding-left: 20px;
+        background-color: lightgray;
+        
+    }
+    
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:none;
+        border-radius: 10px;
+        
+    }
+    b{
+        font-size: 12px;
+    }
+    section{
+        margin-top: 10px;
+    }
+    img{
+        border-radius: 10px;
+        box-shadow: rgb(34, 6, 6) 2px 2px 10px;
+    }
+    input[type="submit"]{
+        display: block;
+        margin-left: 80px;
+        border:none;
+        border-radius: 5px;
+        padding: 4px 10px;
+        background-color: rgb(21, 127, 28);
+        color: rgb(253, 255, 254);
+        font-weight:bold;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover{
+        background: white;
+        color: green;
+ 
+    }
+
+</style>
+<body class="form-box">
+    <h1>New Awesome Product</h1> 
+    <img src="image/product.png"><br>
+    <p>Introducing our <b>latest product</b>, designed to make your life easier and more efficient.</p>
+    <ul>
+        <li>Feature 1</li> 
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+    </ul>
+    <b>Order now!</b><br>
+    <section >
+        <label for="menu"> size: </label>
+        <Select id="menu">
+        <option>Small</option>
+        <option>Large</option>
+        </Select>
+
+        <label for="color">Color:</label>
+        <select id="color" style="cursor: progress;">
+            <option style="background-color:crimson; color:white;">Red</option>
+            <option style="background-color: green; color:white;">Green</option>
+            <option style="background-color:blue; color: white;">Blue</option>
+        </select>
+    </section><br>
+    <form>
+        <label for="name"> Name:</label>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="abc@gmail.com">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
