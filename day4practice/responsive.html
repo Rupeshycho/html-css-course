@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .left{
+        background-color: blue;
+        padding: 20px;
+        float: left;
+        width: 20%;
+
+    }
+    .main{
+        background-color: rgb(195, 195, 231);
+        padding: 20px;
+        float: left;
+        width: 60%;
+        
+    }
+    .right{
+        background-color: rgb(17, 150, 113);
+        padding: 20px;
+        float: left;
+        width: 20%;
+        
+    }
+    @media screen and(max-width: 800px){
+        .left,.main, .right{
+            width:100%;
+            
+        }
+    }
+</style>
+<body>
+    <h2>Media Queries</h2
+    <p>Resize the browser windows.</p>
+    <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+
+    <div class="main">
+        <p>Main content</p>
+    </div>
+
+    <div class="right">
+        <p>Right Content</p>
+    </div>
+</body>
+</html>

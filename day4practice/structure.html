@@ -63,51 +63,50 @@
             </div>
         </section>
 
-        <section id="contact">
-            <div class="contact-wrap">
+       <section id="contact">
+    <div class="contact-wrap">
 
-                <form action="">
-      
-                   <form>
-                    <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/xrebnelj" method="POST">
+            <h2>Contact Us</h2>
 
-                    <!-- First & Last Name -->
-                    <div class="name">
-                        <div>
-                            <label>First name</label>
-                            <input type="text">
-                        </div>
+            <!-- First & Last Name -->
+            <div class="name">
+                <div>
+                    <label>First name</label>
+                    <input type="text" name="first_name" required>
+                </div>
 
-                        <div>
-                            <label>Last name</label>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <!-- Email & Gender -->
-                    <div class="name">
-                        <div>
-                            <label>Email Address</label>
-                            <input type="email">
-                        </div>
-
-                        <div>
-                            <label>Gender</label>
-                            <select>
-                                <option>Male</option>
-                                <option>Female</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Submit -->
-                    <div class="submit">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-
+                <div>
+                    <label>Last name</label>
+                    <input type="text" name="last_name" required>
+                </div>
             </div>
-        </section>
+
+            <!-- Email & Gender -->
+            <div class="name">
+                <div>
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div>
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
 
         <section id="home">
             <a href="#banner">Go to home</a>

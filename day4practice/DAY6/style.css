@@ -1,0 +1,224 @@
+/* -----------------------
+   RESET & BASE STYLES
+------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* -----------------------
+   HEADER
+------------------------ */
+header {
+    background: #222;
+    padding: 15px 0;
+}
+
+.head-wrap {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 45px;
+}
+
+/* -----------------------
+   NAVIGATION
+------------------------ */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #00c6ff;
+}
+
+/* -----------------------
+   BANNER SECTION
+------------------------ */
+#banner {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 80px 20px;
+}
+
+.banner-wrap {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.banner-wrap a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner-wrap p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* -----------------------
+   ABOUT BANNER
+------------------------ */
+#about-banner {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-b h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-b p {
+    color: #666;
+}
+
+/* -----------------------
+   SERVICES SECTION
+------------------------ */
+#services {
+    padding: 70px 20px;
+}
+
+.service-wrap {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service {
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.service-desc h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-desc p {
+    font-size: 14px;
+    color: #555;
+}
+
+.more {
+    margin-top: 15px;
+}
+
+.more button {
+    padding: 8px 16px;
+    border: none;
+    background: #0072ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.more button:hover {
+    background: #0056cc;
+}
+
+/* -----------------------
+   FOOTER BUTTON CENTER
+------------------------ */
+footer {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Wrap buttons in center */
+.button-left,
+.right {
+    display: inline-block;
+}
+
+/* Button container */
+footer .button-left,
+footer .right {
+    margin: 10px;
+}
+
+/* Small icon-style buttons */
+footer button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: orange;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button:hover {
+    background: darkorange;
+}
+
+/* -----------------------
+   RESPONSIVE
+------------------------ */
+@media (max-width: 768px) {
+    .head-wrap {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        text-align: center;
+        flex-direction: column;
+    }
+}
